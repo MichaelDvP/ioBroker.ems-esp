@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 /**
  * @license
  *
@@ -13,11 +14,11 @@
  */
 
 
- 	// This will be called by the admin adapter when the settings page loads
-let secret;
+// This will be called by the admin adapter when the settings page loads
 let roles = [];
 let devices = [];
 let thermostats = [];
+let heatingcircuits = [];
 
 /**
 		function loadHelper(settings, onChange) {

@@ -9,24 +9,17 @@ assignees: ''
 **Describe the bug**  
 A clear and concise description of what the bug is.
 
-**To Reproduce**  
-Steps to reproduce the behavior:
-1. Go to '...'
-2. Click on '...'
-3. Scroll down to '....'
-4. See error
+
+
+** Releated to gateway(s) and/or adapter configuration
+
+B Which version of the ems-esp adapter are you using? 
+C is this bug related to the ems-esp or km200 gateway? (which gateway hardware are you using?)
+D please descripe software versions of the ems-esp firmware and/or km200 gateway 
+E please post screenshot(s) of the adapter config
 
 **Expected behavior**  
 A clear and concise description of what you expected to happen.
-
-**Screenshots & Logfiles**  
-If applicable, add screenshots and logfiles to help explain your problem.
-
-**Versions:**  
- - Adapter version: <adapter-version>
- - JS-Controller version: <js-controller-version> <!-- determine this with `iobroker -v` on the console -->
- - Node version: <node-version> <!-- determine this with `node -v` on the console -->
- - Operating system: <os-name>
 
 **Additional context**  
 Add any other context about the problem here.

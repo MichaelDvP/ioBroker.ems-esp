@@ -26,13 +26,15 @@
 
 		<div class="col s12">
 			<ul class="tabs">
-				<li class="tab col s5 m4 tab-main"><a href="#tab-main" class="translate active">Main settings</a></li>
+				<li class="tab col s5 m4 tab-ems-esp"><a href="#tab-ems-esp" class="translate active">EMS-ESP settings</a></li>
+				<li class="tab col s5 m4 tab-km200"><a href="#tab-km200" class="translate active">KM200 settings</a></li>
 				<li class="tab col s5 m4 tab-parameter"><a href="#tab-parameter" class="translate">parameter</a></li>
 				<li class="tab col s5 m4 tab-heatdemand"><a href="#tab-heatdemand" class="translate">heat demand</a></li>
 				<li class="tab col s5 m4 tab-advanced"><a href="#tab-advanced" class="translate">ems expert settings</a></li>
 			</ul>
 		</div>
-		<div id="tab-main" class="col s12 page">
+
+		<div id="tab-ems-esp" class="col s12 page">
 
 			<div class="row">
 				<div class="col s12 m4 l2">
@@ -45,15 +47,10 @@
 					<input type="checkbox" class="value" id="emsesp_active" />
 					<label for="emsesp_active" class="translate">emsesp_active</label>
 				</div>
-
-				<div class="col s2 input-field">
+	
+				<div class="col s3 input-field">
 					<input type="text" class="value" id="emsesp_ip" />
 					<label for="emsesp_ip" class="translate">emsesp_ip</label>
-				</div>
-
-				<div class="col s2 input-field">
-					<input type="checkbox" class="value" id="km200_structure" />
-					<label for="km200_structure" class="translate">km200_structure</label>
 				</div>
 
 				<div class="col s1 input-field">
@@ -61,9 +58,22 @@
 					<label for="ems_polling" class="translate">ems_polling</label>
 				</div>
 
-				<div class="col s1 input-field">
+				<div class="col s2 input-field">
+					<input type="checkbox" class="value" id="km200_structure" />
+					<label for="km200_structure" class="translate">km200_structure</label>
+				</div>
+
+			</div>
+
+			<div class="row">
+				<div class="col s2 input-field">
 					<input type="checkbox" class="value" id="ems_dallas" />
 					<label for="ems_dallas" class="translate">ems_dallas</label>
+				</div>
+
+				<div class="col s3 input-field">
+					<input type="checkbox" class="value" id="ems_dallas_old_format" />
+					<label for="ems_dallas_old_format" class="translate">ems_dallas_old_format</label>
 				</div>
 
 				<div class="col s1 input-field">
@@ -71,10 +81,13 @@
 					<label for="ems_analog" class="translate">ems_analog</label>
 				</div>
 
+				<div class="col s3 input-field">
+					<input type="checkbox" class="value" id="ems_custom_elements" />
+					<label for="ems_custom_elements" class="translate">ems_custom_elements</label>
+				</div>
 			</div>
 
-			<div class="row">	
-
+			<div class="row">
 				<div class="col s10 input-field">
 					<input type="text" class="value" id="ems_token" />
 					<label for="ems_token" class="translate">ems_token</label>
@@ -83,12 +96,56 @@
 			</div>
 
 			<div class="row">
+				<div class="col s10 input-field">
+					<input type="checkbox" class="value" id="ems_custom" />
+					<label for="ems_custom" class="translate">ems_custom</label>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col s2 input-field">
+					<input type="checkbox" class="value" id="ems_energy" />
+					<label for="ems_energy" class="translate">ems_energy</label>
+				</div>
+
+				<div class="col s1 input-field">
+					<input type="number" class="value" id="ems_nominalpower" />
+					<label for="ems_nominalpower" class="translate">ems_nominalpower</label>
+				</div>
+
+				<div class="col s3 input-field">
+					<input type="text" class="value" id="ems_modulation" />
+					<label for="ems_modulation" class="translate">ems_modulation</label>
+				</div>
+
+				<div class="col s3 input-field">
+					<input type="text" class="value" id="ems_wwactive" />
+					<label for="ems_wwactive" class="translate">ems_wwactive</label>
+				</div>
+
+			</div>
+			
+		</div>
+
+
+
+		<div id="tab-km200" class="col s12 page">
+
+			<div class="row">
+				<div class="col s12 m4 l2">
+					<img src="km200.png" class="logo">
+				</div>
+			</div>
+
+			<div class="row">
 				<div class="col s2 input-field">
 					<input type="checkbox" class="value" id="km200_active" />
 					<label for="km200_active" class="translate">km200_active</label>
 				</div>
+			</div>
 
-				<div class="col s2 input-field">
+			<div class="row">
+				<div class="col s3 input-field">
 					<input type="text" class="value" id="km200_ip" />
 					<label for="km200_ip" class="translate">km200_ip</label>
 				</div>
@@ -102,13 +159,15 @@
 					<input type="text" class="value" id="control_file" />
 					<label for="control_file" class="translate">control_file</label>
 				</div>
+			</div>
 
-				<div class="col s2 input-field">
+			<div class="row">
+				<div class="col s3 input-field">
 					<input type="text" class="value" id="gateway_pw" />
 					<label for="gateway_pw" class="translate">gateway_pw</label>
 				</div>
 
-				<div class="col s2 input-field">
+				<div class="col s3 input-field">
 					<input type="password" class="value" id="private_pw" />
 					<label for="private_pw" class="translate">private_pw</label>
 				</div>
@@ -116,13 +175,28 @@
 			</div>
 
 			<div class="row">
-				<div class="col s2 input-field">
+				<div class="col s4 input-field">
 					<input type="checkbox" class="value" id="recordings" />
 					<label for="recordings" class="translate">recordings</label>
 				</div>
 
+			</div>
 
-				<div class="input-field col s1 m8 l2">
+		</div>
+
+		<div id="tab-parameter" class="col s12 page">
+
+			<div class="row">
+				
+			</div>
+			
+			<div class="row">
+				
+			</div>
+
+			<div class="row">
+				
+				<div class="input-field col s4 l4">
                     <select  class="value" id="recordings_format">
                         <option value="0" class="translate">array of values</option>
                         <option value="1" class="translate">array of values with ts</option>
@@ -131,12 +205,13 @@
 					<label class="translate" for="recordings_format">recordings_format</label>
                 </div>
 
-				<div class="input-field col s1 l1">
+				<div class="input-field col s3 l2">
                     <select  class="value" id="db">
                         <option value="" class="translate">no database</option>
+						<option value="history" class="translate">History</option>
                         <option value="sql" class="translate">mySQL</option>
                         <option value="influxdb" class="translate">InfluxDB</option>
-                    </select>
+					</select>
 					<label class="translate" for="db">database</label>
                 </div>
 
@@ -145,24 +220,43 @@
 					<label for="db_instance" class="translate">db_instance</label>
 				</div>
 
-				<div class="col s1 input-field">
-					<input type="number" class="value" id="r_multi" />
-					<label for="r_multi" class="translate">r_multi</label>
+			</div>
+
+			
+			<div class="row">
+				<div class="col s4 input-field">
+					<input type="checkbox" class="value" id="states_reorg" />
+					<label for="states_reorg" class="translate">states_reorg</label>
+				</div>			
+			
+				<div class="col s4 input-field">
+					<input type="checkbox" class="value" id="statistics" />
+					<label for="statistics" class="translate">statistics</label>
+				</div>
+		
+			</div>
+
+			<div class="row">
+				<div class="col s3 input-field">
+					<input type="text" class="value" id="room" />
+					<label for="room" class="translate">room</label>
 				</div>
 
 				<div class="col s3 input-field">
-					<input type="checkbox" class="value" id="r_c" />
-					<label for="r_c" class="translate">r_c</label>
+					<input type="text" class="value" id="function" />
+					<label for="function" class="translate">function</label>
 				</div>
 
 			</div>
 
-
 			<div class="row">
-				<div class="col s2 input-field">
+				<div class="col s4 input-field">
 					<input type="checkbox" class="value" id="eff_active" />
 					<label for="eff_active" class="translate">eff_active</label>
 				</div>
+			</div>
+
+			<div class="row">
 				<div class="col s3 input-field">
 					<input type="text" class="value" id="modulation" />
 					<label for="modulation" class="translate">modulation</label>
@@ -236,36 +330,6 @@
 
 
 
-		</div>
-
-		<div id="tab-parameter" class="col s12 page">
-
-			<div class="row">
-
-				<div class="col s2 input-field">
-					<input type="checkbox" class="value" id="statistics" />
-					<label for="statistics" class="translate">statistics</label>
-				</div>
-
-				<div class="col s2 input-field">
-					<input type="checkbox" class="value" id="states_reorg" />
-					<label for="states_reorg" class="translate">states_reorg</label>
-				</div>
-			
-			</div>
-
-			<div class="row">
-				<div class="col s2 input-field">
-					<input type="text" class="value" id="room" />
-					<label for="room" class="translate">room</label>
-				</div>
-
-				<div class="col s2 input-field">
-					<input type="text" class="value" id="function" />
-					<label for="function" class="translate">function</label>
-				</div>
-
-			</div>
 
 		</div>
 
@@ -274,7 +338,7 @@
 
 			<div class="row">
 
-				<div class="col s2 input-field">
+				<div class="col s4 input-field">
 					<input type="checkbox" class="value" id="heatdemand" />
 					<label for="heatdemand" class="translate">heatdemand</label>
 				</div>
@@ -293,7 +357,7 @@
 								<th data-name="actualtemp"      style="width: 30%" data-type="text" 	class="translate">actual temp</th>
 
 								<th data-name="deltam"   style="width: 5%" data-type="select"  
-									data-default="1.0" data-options="-3.0;-2.5;-2.0;-1.5;-1.0;-0.5;0.0;0.5;1.0;1.5;2.0;2.5;3.0" class="translate">minimum delta</th>
+									data-default="1.0" data-options="0.25;0.5;0.75;1.0;1.5;2.0;2.5;3.0;3.5;4.0;4.5;5.0" class="translate">minimum delta</th>
 
 								<th data-name="hc" style="width: 5%" data-type="select" 
 									data-default="hc1" data-options="hc1;hc2;hc3;hc4"	class="translate">hc</th>
@@ -350,16 +414,14 @@
 				****************************************************************************
 			</div>
 			<div class="row">
-				***** SETTINGS ON RAW EMS-TELEGRAMS --- EXPERTS ONLY --- DANGER !!!
+				***** SETTINGS ON CUSTOM EMS-TELEGRAMS --- EXPERTS ONLY --- DANGER !!!
 			</div>
 			<div class="row">
 				****************************************************************************
 			</div>
 
-
 			<div class="row">
-
-				<div class="col s2 input-field">
+				<div class="col s1 input-field" style="width: 20%">
 					<input type="checkbox" class="value" id="syslog" />
 					<label for="syslog" class="translate">syslog</label>
 				</div>
@@ -368,21 +430,21 @@
 					<input type="number" class="value" id="syslog_port" />
 					<label for="syslog_port" class="translate">syslog_port</label>
 				</div>
-
 			</div>
 
 			<div class="row">			
 
 				<div class="col s12" id="devices">
+					
 					<a class="btn-floating waves-effect waves-light blue table-button-add"><i class="material-icons">add</i></a>
 					<div class="table-values-div">
 						<table class="table-values">
 							<thead>
 							<tr>
 								<th data-name="state"        style="width: 20%" data-type="text" 	class="translate">state</th>
-								<th data-name="src"          style="width: 3%" data-type="hex" 	class="translate">src</th>
-								<th data-name="type"         style="width: 3%" data-type="hex" 	class="translate">type</th>
-								<th data-name="offset"       style="width: 2%" data-type="hex" 	class="translate">hex</th>
+								<th data-name="src"          style="width: 3%" data-type="text" 	class="translate">src</th>
+								<th data-name="type"         style="width: 3%" data-type="text" 	class="translate">type</th>
+								<th data-name="offset"       style="width: 2%" data-type="text" 	class="translate">hex</th>
 
 								<th data-name="polling"      style="width: 3px" data-type="checkbox" class="translate">polling</th>
 
@@ -396,7 +458,7 @@
 								<th data-name="state_type"   style="width: 10%" data-type="select"  
 									data-default="number"data-options="number;hex;string;switchPrograms;holidayModes" class="translate">state_type</th>
 
-								<th data-name="states"       style="width: 25%" data.type="text" class="translate">states</th>
+								<th data-name="states"       style="width: 25%" data.type="json" class="translate">states</th>
 								<th data-name="min"          style="width: 3%" data-type="number" class="translate">min</th>
 								<th data-name="max"          style="width: 3%" data-type="number" class="translate">max</th>
 								<th data-name="uom"          style="width: 5%" data-tye="text" class="translate">uom</th>

@@ -1,92 +1,98 @@
 {
   "common": {
     "name": "ems-esp",
-    "version": "1.15.0",
-    "title": "EMS-ESP (ems-esp & km200)",
+    "version": "3.1.0",
     "news": {
-      "1.15.0": {
-        "en": "adjustments for ems-esp RC310 holiday modes",
-        "de": "Anpassungen für ems-esp RC310 Urlaubsmodi",
-        "ru": "корректировки режимов выходного дня ems-esp RC310",
-        "pt": "ajustes para os modos de férias ems-esp RC310",
-        "nl": "aanpassingen voor ems-esp RC310 vakantiemodi",
-        "fr": "ajustements pour les modes vacances ems-esp RC310",
-        "it": "regolazioni per le modalità vacanze ems-esp RC310",
-        "es": "ajustes para los modos de vacaciones ems-esp RC310",
-        "pl": "korekty dla trybów wakacyjnych ems-esp RC310",
-        "zh-cn": "EMS-esp RC310 假期模式的调整"
+      "3.1.0": {
+        "en": "Update km200 gateway encryption test for wrong passwords\navoid json error on adapter start for field /gateway/firmware",
+        "de": "Update km200 Gateway Verschlüsselungstest für falsche Passwörter\njson fehler auf adapter start für feld /gateway/firmware vermeiden",
+        "ru": "Тест шифрования шлюза km200 для неправильных паролей\nизбегать ошибки json при запуске адаптера для поля /gateway /firmware",
+        "pt": "Atualizar o teste de criptografia de gateway km200 para senhas erradas\nevitar erro json no início do adaptador para campo /gateway /firmware",
+        "nl": "Km200-gateway encryptietest bijwerken voor verkeerde wachtwoorden\njson-fout vermijden bij het starten van de adapter voor veld /gateway/firmware",
+        "fr": "Mettre à jour le test de chiffrement de la passerelle km200 pour les mauvais mots de passe\néviter l'erreur json au démarrage de l'adaptateur pour le champ /gateway/firmware",
+        "it": "Aggiornare il test di crittografia gateway km200 per password sbagliate\nevitare l'errore json sull'avvio dell'adattatore per il campo /gateway/firmware",
+        "es": "Actualización km200 prueba de cifrado de puerta para contraseñas erróneas\nevitar error json en el inicio del adaptador para campo /gateway /firmware",
+        "pl": "Aktualizacja testu szyfrowania bramki km200 dla błędnych haseł\nuniknąć błędu json na starcie adaptera dla pola / bramki / oprogramowania firmowego",
+        "uk": "Update км200 тестування шифрування шлюзу для неправильних паролів\nуникнути помилки json на адаптері старту для поля /gateway /firmware",
+        "zh-cn": "更新 km200 网关加密测试错误密码\n避免 json 字段/ 出入口/ 软件适配器启动时出错"
       },
-      "1.14.0": {
-        "en": "split parameters for dallas & analog sensors\nimprove warning messages if sensors are missing",
-        "de": "Split-Parameter für Dallas & analoge Sensoren\nWarnmeldungen bei fehlenden Sensoren verbessern",
-        "ru": "раздельные параметры для Далласа и аналоговых датчиков\nулучшить предупреждающие сообщения, если датчики отсутствуют",
-        "pt": "parâmetros divididos para dallas e sensores analógicos\nmelhorar as mensagens de aviso se os sensores estiverem ausentes",
-        "nl": "split parameters voor dallas & analoge sensoren\nwaarschuwingsberichten verbeteren als sensoren ontbreken",
-        "fr": "paramètres partagés pour les capteurs dallas et analogiques\naméliorer les messages d'avertissement en cas d'absence de capteurs",
-        "it": "parametri divisi per dallas e sensori analogici\nmigliorare i messaggi di avviso se mancano i sensori",
-        "es": "parámetros divididos para dallas y sensores analógicos\nmejorar los mensajes de advertencia si faltan sensores",
-        "pl": "podzielone parametry dla czujników Dallas i analogowych\npoprawić komunikaty ostrzegawcze w przypadku braku czujników",
-        "zh-cn": "达拉斯和模拟传感器的拆分参数\n如果传感器丢失，改进警告消息"
+      "3.0.5": {
+        "en": "avoid json error on adapter start for field /gateway/firmware\nupdate test-and-release worflow\nupdate license info",
+        "de": "json fehler auf adapter start für feld /gateway/firmware vermeiden\nupdate test-und-release worflow\nlizenzdaten aktualisieren",
+        "ru": "избегать ошибки json при запуске адаптера для поля /gateway /firmware\nобновление worflow\nобновление информации о лицензии",
+        "pt": "evitar erro json no início do adaptador para campo /gateway /firmware\natualizar test-and-release worflow\natualizar informações da licença",
+        "nl": "json-fout vermijden bij het starten van de adapter voor veld /gateway/firmware\nupdate test-and-release worflow\nlicentie-informatie bijwerken",
+        "fr": "éviter l'erreur json au démarrage de l'adaptateur pour le champ /gateway/firmware\nmise à jour test-and-release worflow\nmettre à jour les informations de licence",
+        "it": "evitare l'errore json sull'avvio dell'adattatore per il campo /gateway/firmware\naggiornamento test-e-release worflow\naggiornare le informazioni sulla licenza",
+        "es": "evitar error json en el inicio del adaptador para campo /gateway /firmware\nactualización de prueba y liberación de worflow\nactualización de la licencia info",
+        "pl": "uniknąć błędu json na starcie adaptera dla pola / bramki / oprogramowania firmowego\nupdate test- and- release worflow\naktualizacja informacji licencyjnych",
+        "uk": "уникнути помилки json на адаптері старту для поля /gateway /firmware\nоновлення тестово-випускного worflow\nоновлення інформації про ліцензію",
+        "zh-cn": "避免 json 字段/ 出入口/ 软件适配器启动时出错\n更新测试和释放电源\n更新许可证信息"
       },
-      "1.13.0": {
-        "en": "add visibility attributes within ems-esp states\nerror processing dallas / analog sensors of ems-esp",
-        "de": "fügen Sie Sichtbarkeitsattribute innerhalb von ems-esp-Zuständen hinzu\nfehlerverarbeitung dallas / analoge sensoren von ems-esp",
-        "ru": "добавить атрибуты видимости в состояниях ems-esp\nобработка ошибок dallas/аналоговых датчиков ems-esp",
-        "pt": "adicionar atributos de visibilidade nos estados ems-esp\nerro de processamento dallas/sensores analógicos do ems-esp",
-        "nl": "voeg zichtbaarheidsattributen toe binnen ems-esp-statussen\nfoutverwerking dallas / analoge sensoren van ems-esp",
-        "fr": "ajouter des attributs de visibilité dans les états ems-esp\nerreur de traitement dallas / capteurs analogiques de ems-esp",
-        "it": "aggiungi attributi di visibilità negli stati ems-esp\nerrore di elaborazione dallas / sensori analogici di ems-esp",
-        "es": "agregue atributos de visibilidad dentro de los estados ems-esp\nerror procesando dallas/sensores analogicos de ems-esp",
-        "pl": "dodać atrybuty widoczności w stanach ems-esp\nprzetwarzanie błędów dallas / czujniki analogowe ems-esp",
-        "zh-cn": "在 EMS-ESP 状态中添加可见性属性\n错误处理达拉斯/ EMS-ESP的模拟传感器"
+      "3.0.4": {
+        "en": "avoid json error on adapter start for field /gateway/firmware",
+        "de": "json fehler auf adapter start für feld /gateway/firmware vermeiden",
+        "ru": "избегать ошибки json при запуске адаптера для поля /gateway /firmware",
+        "pt": "evitar erro json no início do adaptador para campo /gateway /firmware",
+        "nl": "json-fout vermijden bij het starten van de adapter voor veld /gateway/firmware",
+        "fr": "éviter l'erreur json au démarrage de l'adaptateur pour le champ /gateway/firmware",
+        "it": "evitare l'errore json sull'avvio dell'adattatore per il campo /gateway/firmware",
+        "es": "evitar error json en el inicio del adaptador para campo /gateway /firmware",
+        "pl": "uniknąć błędu json na starcie adaptera dla pola / bramki / oprogramowania firmowego",
+        "uk": "уникнути помилки json на адаптері старту для поля /gateway /firmware",
+        "zh-cn": "避免 json 字段/ 出入口/ 软件适配器启动时出错"
       },
-      "1.12.1": {
-        "en": "corrections for heatdemand function",
-        "de": "Korrekturen für die Wärmebedarfsfunktion",
-        "ru": "поправки на функцию теплопотребления",
-        "pt": "correções para a função de demanda de calor",
-        "nl": "correcties voor warmtevraagfunctie",
-        "fr": "corrections pour la fonction de demande de chaleur",
-        "it": "correzioni per la funzione di richiesta di calore",
-        "es": "correcciones para la función de demanda de calor",
-        "pl": "poprawki dla funkcji zapotrzebowania na ciepło",
-        "zh-cn": "热量需求函数的修正"
+      "3.0.3": {
+        "en": "improve km200 data read to avoid errors",
+        "de": "km200 daten lesen, um fehler zu vermeiden",
+        "ru": "улучшить данные km200, чтобы избежать ошибок",
+        "pt": "melhorar a leitura de dados km200 para evitar erros",
+        "nl": "verbeteren km200 gegevens gelezen om fouten te voorkomen",
+        "fr": "améliorer les données km200 pour éviter les erreurs",
+        "it": "migliorare i dati di km200 letti per evitare errori",
+        "es": "mejorar km200 datos leídos para evitar errores",
+        "pl": "poprawić odczyt danych km200, aby uniknąć błędów",
+        "uk": "покращувати дані км200, щоб уникнути помилок",
+        "zh-cn": "改进 km200 数据,以避免错误"
       },
-      "1.12.0": {
-        "en": "add analog sensors for ems-esp gateway, remove ems-esp settings",
-        "de": "analoge Sensoren für ems-esp-Gateway hinzufügen, ems-esp-Einstellungen entfernen",
-        "ru": "добавить аналоговые датчики для шлюза ems-esp, удалить настройки ems-esp",
-        "pt": "adicionar sensores analógicos para gateway ems-esp, remover configurações ems-esp",
-        "nl": "voeg analoge sensoren toe voor ems-esp gateway, verwijder ems-esp instellingen",
-        "fr": "ajouter des capteurs analogiques pour la passerelle ems-esp, supprimer les paramètres ems-esp",
-        "it": "aggiungi sensori analogici per gateway ems-esp, rimuovi le impostazioni ems-esp",
-        "es": "agregue sensores analógicos para la puerta de enlace ems-esp, elimine la configuración de ems-esp",
-        "pl": "dodaj czujniki analogowe dla bramki ems-esp, usuń ustawienia ems-esp",
-        "zh-cn": "为 ems-esp 网关添加模拟传感器，删除 ems-esp 设置"
+      "3.0.2": {
+        "en": "improve km200 data read to avoid errors - try http get up to 3 times now - especially for recordings",
+        "de": "km200 daten lesen, um fehler zu vermeiden - testen sie jetzt http bis zu 3 mal - vor allem für aufnahmen",
+        "ru": "улучшить данные km200 читать, чтобы избежать ошибок - попробуйте http получить до 3 раз сейчас - особенно для записей",
+        "pt": "melhorar a leitura de dados km200 para evitar erros - tente http chegar até 3 vezes agora - especialmente para gravações",
+        "nl": "verbeteren km200 gegevens gelezen om fouten te voorkomen - probeer http krijgen tot 3 keer nu - vooral voor opnames",
+        "fr": "améliorer les données de km200 pour éviter les erreurs - essayez http jusqu'à 3 fois maintenant - surtout pour les enregistrements",
+        "it": "migliorare i dati di km200 letti per evitare errori - provare http ottenere fino a 3 volte ora - soprattutto per le registrazioni",
+        "es": "mejorar km200 datos leídos para evitar errores - intentar http obtener hasta 3 veces ahora - especialmente para grabaciones",
+        "pl": "poprawić odczyt km200 danych, aby uniknąć błędów - spróbuj http dostać się do 3 razy - zwłaszcza dla nagrań",
+        "uk": "поліпшити км200 читання даних, щоб уникнути помилок - спробуйте отримати доступ до 3 разів зараз - особливо для записів",
+        "zh-cn": "改进 km200 数据读取以避免错误 - 尝试 http 现在最多3 次 - 特别是录音"
       },
-      "1.11.2": {
-        "en": "code optimization and error processing for ems-esp gateway",
-        "de": "Codeoptimierung und Fehlerbehandlung für ems-esp Gateway",
-        "ru": "оптимизация кода и обработка ошибок для шлюза ems-esp",
-        "pt": "otimização de código e processamento de erros para gateway ems-esp",
-        "nl": "code-optimalisatie en foutverwerking voor ems-esp gateway",
-        "fr": "optimisation du code et traitement des erreurs pour la passerelle ems-esp",
-        "it": "ottimizzazione del codice ed elaborazione degli errori per il gateway ems-esp",
-        "es": "optimización de código y procesamiento de errores para puerta de enlace ems-esp",
-        "pl": "optymalizacja kodu i przetwarzanie błędów dla bramki ems-esp",
-        "zh-cn": "EMS-esp网关的代码优化和错误处理"
+      "3.0.1": {
+        "en": "change KM200 error messages for recordings",
+        "de": "kM200 Fehlermeldungen für Aufnahmen ändern",
+        "ru": "изменение сообщений об ошибках KM200 для записей",
+        "pt": "alterar mensagens de erro KM200 para gravações",
+        "nl": "kM200 foutmeldingen voor opnames wijzigen",
+        "fr": "modifier les messages d'erreur KM200 pour les enregistrements",
+        "it": "cambiare messaggi di errore KM200 per le registrazioni",
+        "es": "cambiar mensajes de error KM200 para grabaciones",
+        "pl": "zmiana komunikatów błędów KM200 dla nagrań",
+        "uk": "змінити повідомлення про помилку KM200 для записів",
+        "zh-cn": "更改 KM200 录音错误消息"
       },
-      "1.11.1": {
-        "en": "error corrections on invalid heatdemand states",
-        "de": "Fehlerkorrekturen bei ungültigen Wärmebedarfszuständen",
-        "ru": "исправления ошибок в недопустимых состояниях тепловой нагрузки",
-        "pt": "correções de erros em estados inválidos de demanda de calor",
-        "nl": "foutcorrecties op ongeldige warmtevraagstatussen",
-        "fr": "corrections d'erreurs sur les états de demande de chaleur invalides",
-        "it": "correzioni di errori su stati di richiesta di calore non validi",
-        "es": "correcciones de errores en estados de demanda de calor no válidos",
-        "pl": "korekty błędów w nieprawidłowych stanach zapotrzebowania na ciepło",
-        "zh-cn": "对无效热需求状态的纠错"
+      "3.0.0": {
+        "en": "Node >= 18 required\nupdate heatdemand weight changes to be effective during active instance\nems-esp gateway: Raw telegram search for EMS+ thermostats: switchPrograms and holidayModes (RC310/RC300)\ncreate writable objects / states for switchPrograms and holidayModes\nthis function is only active when no km200 gateway is selected - ems-esp gateway only\nimprove error messages for km200 (wrong ip / passwords)\nsmall changes within PDF adapter documentation",
+        "de": "Node >= 18 erforderlich\naktualisierung von wärmeabfrage-gewichtsänderungen während der aktiven instanz\nems-esp Gateway: Suche nach EMS+ Thermostaten: switchProgramme und UrlaubModes (RC310/RC300)\nschreibbare Objekte / Zustände für Schalter erstellen Programme und Urlaub Moden\ndiese funktion ist nur aktiv, wenn kein km200 gateway ausgewählt wird - ems-esp gateway nur\nverbesserung der fehlermeldungen für km200 (wrong ip / passwörter)\nkleine Änderungen in PDF Adapter Dokumentation",
+        "ru": "Node >= 18\nобновление изменений в весе теплообмена, чтобы быть эффективным во время активного экземпляра\nems-esp шлюз: Сырой телеграмма поиска термостатов EMS+: коммутаторПрограммы и праздникиМоды (RC310/RC300)\nсоздание реальных объектов / состояний для переключения Программы и отдых Режимы\nэта функция активна только в том случае, если не выбраны шлюзы km200 - только ems-esp\nулучшить сообщения об ошибках на км200 (неправильные ip / пароли)\nнебольшие изменения в документации адаптера PDF",
+        "pt": "Node >= 18 necessário\natualizar as alterações de peso da demanda de calor para ser eficaz durante a instância ativa\nems-esp gateway: Busca de telegramas crus para termostatos EMS+: switchPrograms and holidayModes (RC310/RC300)\ncriar objetos / estados writable para interruptor Programas e férias Modos\nesta função só está ativa quando não há gateway km200 é selecionado - ems-esp gateway somente\nmelhorar mensagens de erro para km200 (wrong ip / senhas)\npequenas alterações na documentação do adaptador PDF",
+        "nl": "Node < 18 vereist\nupdate warmtevraag gewicht wijzigingen effectief tijdens actieve instantie\nems-esp gateway: Raw telegram search for EMS+ thermostaten: switchPrograms and holidayModes (RC310/RC300)\nbeschrijfbare objecten / toestanden voor switch aanmaken Programma's en vakantie Modi\ndeze functie is alleen actief als er geen km200 gateway is geselecteerd - alleen ems-esp gateway\nfoutmeldingen voor km200 verbeteren (verkeerde ip / wachtwoorden)\nkleine wijzigingen in PDF-adapterdocumentatie",
+        "fr": "Noeud >= 18 requis\nmettre à jour les modifications du poids de la demande de chaleur pour être efficace en instance active\npasserelle ems-esp : Recherche de télégrammes bruts pour les thermostats EMS+: switchProgrammes et vacancesModes (RC310/RC300)\ncréer des objets/états en écriture pour switch Programmes et congés Modes\ncette fonction n'est active que si aucune passerelle km200 n'est sélectionnée - passerelle ems-esp seulement\naméliorer les messages d'erreur pour km200 (wrong ip / mots de passe)\npetits changements dans la documentation de l'adaptateur PDF",
+        "it": "Nodo = 18 richiesto\naggiornare le variazioni di peso del dissipatore di calore per essere efficace durante l'istanza attiva\nems-esp gateway: Ricerca telegrafica raw per termostati EMS+: switchPrograms and holidayModes (RC310/RC300)\ncreare oggetti / stati scrivibili per l'interruttore Programmi e vacanze Modalità\nquesta funzione è attiva solo quando non viene selezionato alcun gateway km200 - ems-esp gateway only\nmigliorare i messaggi di errore per km200 (wrong ip / password)\npiccoli cambiamenti nella documentazione dell'adattatore PDF",
+        "es": "Nodo = 18 requerido\nactualizar los cambios de peso de la indemnización de calor para ser eficaz durante la instancia activa\nems-esp gateway: Búsqueda de telegramas crudos para termostatos EMS+: interruptorProgramas y feriasModes (RC310/RC300)\ncrear objetos / estados para conmutar Programas y vacaciones Modos\nesta función sólo es activa cuando no se selecciona la puerta de entrada de km200 - ems-esp sólo\nmejorar los mensajes de error para km200 (wrong ip / contraseñas)\npequeños cambios en la documentación del adaptador PDF",
+        "pl": "Węzeł > = 18 wymagany\naktualizacja zmian zapotrzebowania na ciepło, aby były skuteczne podczas aktywnej instancji\nbrama ems- esp: Poszukiwanie termostatów EMS +: programy rozdzielcze i momenty świąteczne (RC310 / RC300)\ntworzenie zapisywalnych obiektów / stanów dla przełącznika Programy i wakacje Tryby\nfunkcja ta jest aktywna tylko wtedy, gdy nie jest zaznaczona bramka km200 - tylko bramka ems- esp\npoprawić komunikaty błędów dla km200 (błędne ip / haseł)\nniewielkie zmiany w dokumentacji adaptera PDF",
+        "uk": "Node >= 18 потрібно\nоновлюється зміна маси теплової енергії під час активного екземпляра\nемс-есп шлюз: Пошук сирої телеграми термостатів EMS+: перемикачПрограми та відпочинокМоди (RC310/RC300)\nстворити об'єкти, що містяться в режимі реального часу, Програми та відпочинок Режими\nця функція діє тільки при відсутності км200 шлюзу обраний - емс-esp шлюзу тільки\nполіпшити повідомлення про помилки для км200 (wrong ip / паролі)\nнезначні зміни в документі PDF-адаптер",
+        "zh-cn": "需要18号节点\n更新热需求重量变化以在活动实例中有效\n嵌入网关 : 原始电报搜索EMS+恒温器:切换程序与节假日Modes(RC310/RC300)\n创建可写对象/ 切换状态 方案和假日 模式\n3⁄4 ̄ ̧漯b\n改进 km200 的错误信息(错误 ip/ 密码)\npDF 适配器文档中的小变化"
       }
     },
     "titleLang": {
@@ -99,6 +105,7 @@
       "it": "EMS-ESP (ems-esp e km200)",
       "es": "EMS-ESP (ems-esp y km200)",
       "pl": "EMS-ESP (ems-esp i km200)",
+      "uk": "EMS-ESP (ems-esp & км200)",
       "zh-cn": "EMS-ESP (ems-esp & km200)"
     },
     "desc": {
@@ -111,6 +118,7 @@
       "it": "Apparecchiature basate su EMS (Energy Management System) di produttori come Bosch, Buderus, Nefit, Junkers, Worcester e Sieger.",
       "es": "Equipos basados en EMS (Energy Management System) de fabricantes como Bosch, Buderus, Nefit, Junkers, Worcester y Sieger.",
       "pl": "Sprzęt oparty na EMS (Energy Management System) takich producentów jak Bosch, Buderus, Nefit, Junkers, Worcester i Sieger.",
+      "uk": "EMS (Система енергоменеджменту) на основі обладнання від виробників, таких як Bosch, Buderus, Nefit, Junkers, Worcester та Sieger.",
       "zh-cn": "来自 Bosch、Buderus、Nefit、Junkers、Worcester 和 Sieger 等制造商的基于 EMS（能源管理系统）的设备。"
     },
     "authors": [
@@ -129,7 +137,11 @@
       "smarthome"
     ],
     "license": "MIT",
+    "licenseInformation": {
+      "type": "free"
+    },
     "platform": "Javascript/Node.js",
+    "tier": 2,
     "icon": "ems-esp.png",
     "enabled": true,
     "extIcon": "https://raw.githubusercontent.com/tp1de/ioBroker.ems-esp/main/admin/ems-esp.png",
@@ -145,7 +157,7 @@
     "dataSource": "poll",
     "dependencies": [
       {
-        "js-controller": ">=3.0.0"
+        "js-controller": ">=4.0.0"
       }
     ],
     "globalDependencies": [
@@ -172,11 +184,18 @@
     "emsesp_ip": "http://ems-esp",
     "ems_apiv3": true,
     "ems_http_wait": 100,
-    "ems_poll_wait": 300,
+    "ems_poll_wait": 500,
     "ems_token": "",
     "ems_polling": 60,
     "ems_dallas": false,
+    "ems_dallas_old_format": false,
     "ems_analog": false,
+    "ems_custom": false,
+    "ems_custom_elements": false,
+    "ems_energy": false,
+    "ems_nominalpower": 15,
+    "ems_modulation": "boiler.curburnpow",
+    "ems_wwactive": "boiler.wwcharging",
     "recordings": false,
     "recordings_format": 0,
     "r_multi": 1,
@@ -202,13 +221,12 @@
     "syslog_port": 20516,
     "states_reorg": false,
     "heatdemand": false,
-    "modulation": "heatSources.hs1.actualModulation",
-    "supplytemp": "heatSources.actualSupplyTemperature",
-    "returntemp": "heatSources.returnTemperature",
+    "modulation": "",
+    "supplytemp": "",
+    "returntemp": "",
     "room": "boiler_room",
     "function": "heating",
-    "lovelace": false,
-    "lovelace_instance": 0
+    "devices": []
   },
   "objects": [],
   "instanceObjects": []
